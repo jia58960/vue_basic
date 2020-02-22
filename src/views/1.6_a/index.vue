@@ -13,8 +13,8 @@ export default {
   },
   data() {
     return {
-      startTime: moment("2020-02-22 09:10:00"),
-      endTime: moment("2020-02-22 09:11:00")
+      startTime: moment("2020-02-22 09:23:00"),
+      endTime: moment("2020-02-22 09:25:00")
     };
   }
 };

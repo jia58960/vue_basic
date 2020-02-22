@@ -33,6 +33,7 @@ export default {
       start: false,
       end: false,
       tip: "",
+      done: false,
       timeGap: 0
     };
   },
@@ -47,7 +48,7 @@ export default {
     this.updateState();
     this.timeInterval = setInterval(() => {
       this.updateState();
-    }, 100);
+    }, 1000);
   },
   beforeDestroy() {
     clearInterval(this.timeInterval);

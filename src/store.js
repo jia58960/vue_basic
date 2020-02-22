@@ -1,8 +1,11 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-Vue.use(Vuex)
+// import Vue from 'vue'
+import {
+  Store
+} from './min-vuex'
+// import Vuex from 'vuex'
+// Vue.use(Vuex)
 
-export default new Vuex.Store({
+export default new Store({
   state: {
     count: 0
   },
@@ -10,8 +13,8 @@ export default new Vuex.Store({
     increment(state) {
       state.count++
     }
-  },
-  actions: {
+  }
+  /* actions: {
     incrementAction({
       state
     }) {
@@ -26,5 +29,5 @@ export default new Vuex.Store({
     incrementDouble(state) {
       return state.count * 2
     }
-  }
+  } */
 })

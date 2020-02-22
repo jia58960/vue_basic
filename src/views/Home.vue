@@ -2,8 +2,9 @@
   <div id="nav">
     <h3>vuex代码</h3>
     {{ count }}
-    <button @click="$store.dispatch('incrementAction')">count++</button>
-    {{ $store.getters.incrementDouble }}
+    <button @click="$store.commit('increment')">count++</button>
+    <!-- <button @click="$store.dispatch('incrementAction')">count++</button> -->
+    <!-- {{ $store.getters.incrementDouble }} -->
     <template v-for="{ key, name } in list">
       <div :key="key" style="padding: 10px 0">
         <router-link :to="`/${key}`">{{ name }}章节</router-link>
